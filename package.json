@@ -1,0 +1,30 @@
+{
+  "name": "interview_scheduler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mongoose.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm start --prefix frontEnd",
+    "dev": "concurrently \"npm start\" \"npm run client\" ",
+    "heroku-postbuild": "cd frontEnd && npm install && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.3",
+    "nodemailer": "^6.6.3",
+    "nodemailer-smtp-transport": "^2.4.2",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
